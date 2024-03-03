@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+
+<body>
+    <section class="fire">
+        <div>RIZUKI</div>
+    </section>
+
+    <svg>
+        <filter id="flame">
+            <feTurbulence id="turbulence" baseFrequency="0.1 0.1" numOctaves="3" seed="4">
+                <animate attributeName="baseFrequency" dur="3s" values="0.1 0.1; 0.13 0.13" repeatCount="indefinite">
+
+                </animate>
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" scale="30">
+
+            </feDisplacementMap>
+        </filter>
+    </svg>
+</body>
+
+</html>

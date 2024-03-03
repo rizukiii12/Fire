@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "SourceSansPro-Regular";
+    src: url(SourceSansPro-Regular.otf) format(truetype);
+}
+*{
+    font-family: "SourceSansPro-Regular" sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.fire{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    filter: url(#flame);
+}
+.fire div{
+    color: #ffeb4b;
+    letter-spacing: 2px;
+    font-size: 12rem;
+    font-weight: 600;
+    position: relative;
+    text-shadow: 1px 1px 20px #f62817, 2px 2px 50px #f62817, 0 0 100px #f62817, 0 0 150px #f62817, 0 0 200px #f62817;
+    -webkit-box-reflect: below -110px linear-gradient(transparent, );
+
+}
+
+svg{
+    width: 0;
+    height: 0;
+}
+
+
